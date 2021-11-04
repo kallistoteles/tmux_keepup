@@ -1,7 +1,6 @@
 #!/bin/sh
 # keepup with tmux
-user=$(id -u -n)
-session="$user"_keepup
+session="$(id -u -n)_keepup"
 
 # function for executing stuff in a new tmux window and output a log
 muxa () {
@@ -15,15 +14,8 @@ muxa () {
 # exmaple of a script
 # pgrep -f script.sh || muxa ~/scripts/script.sh
 
-# start a process as another use
+# exmaple of starting a process as another use
 # pgrep tor || muxa /usr/bin/su -c daemon -m _tor -c '/usr/local/bin/tor'
-
-# check that wireguard is working
-# if ! /sbin/ping -c 1 wireguard_server_hostname; then
-#         # restart wireguard
-#         /usr/local/bin/wg-quick down wg0
-#         /usr/local/bin/wg-quick up wg0
-# fi
 
 # check that the external drive is mounted
 # if ! mount | grep "/mnt/extern"; then
