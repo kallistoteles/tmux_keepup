@@ -20,4 +20,4 @@ muxa () {
 # check that the external drive is mounted
 # if ! mount | grep "/mnt/extern"; then
 #         pgrep fsck || fsck -y /dev/sd1a && mount /dev/sd1a /mnt/extern
-# fi fi
+# fi
