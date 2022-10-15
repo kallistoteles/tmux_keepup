@@ -10,12 +10,12 @@ muxa () {
   tmux pipe-pane -t $pane "cat >~/keepup_$n.log"
 }
 
-# syncthing ecample
+# syncthing example
 # pgrep syncthing || muxa syncthing -no-browser
 
-# exmaple of a script
+# example of running a script
 # pgrep -f script.sh || muxa ~/scripts/script.sh
 
-# exmaple of starting a process as another user
+# example of starting a process as another user
 # pgrep tor || muxa /usr/bin/su -c daemon -m _tor -c '/usr/local/bin/tor'
 
