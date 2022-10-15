@@ -1,7 +1,7 @@
 ## Tmux keepup script
 This is simple concept script for how I run _most_ of my backgroud process instead of cron or systemd on my servers and devices for three main reasons:
-* It's an easy and transparent way to check a process status if you use tmux anyways
-* It works the same on all my os's
+* It's an easy and transparent way to check a process status through tmux
+* It works the same on all the os's I use
 * It is easy to configure and setup
 
 I hope you can make use of this and expand/change it to your preferens, however it works as is for basic things like the examples included.
