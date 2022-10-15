@@ -5,7 +5,7 @@ session="$(id -u -n)_keepup"
 # function for executing stuff in a new tmux window and output a log
 muxa () {
   n=$(basename $1)
-	tmux has-session -t $session || tmux new-session -d -s $session
+  tmux has-session -t $session || tmux new-session -d -s $session
   pane=$(tmux neww -P -n $n -t $session "$@")
   tmux pipe-pane -t $pane "cat >~/keepup_$n.log"
 }
